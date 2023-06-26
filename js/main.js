@@ -3,4 +3,4 @@ console.log ("hi");
 function codingBoss () {
     document.querySelector ('#hand').style.backgroundColor = "hotpink";
 }
-    codingBoss ();
+codingBoss ();
