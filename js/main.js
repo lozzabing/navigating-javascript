@@ -76,4 +76,110 @@ console.log(30+10);
 // }
 // console.log(petAge);
 
+let discount = 10;
+let firstKittenVaccine = 100;
+let firstKittenWormer = 20;
+
+function newKittenPackage(firstKittenVaccine, firstKittenWormer) {
+    firstKittenVaccine = 180;
+    firstKittenWormer = 18;
+    let kittenDiscount = firstKittenVaccine + firstKittenWormer;
+    console.log(kittenDiscount - discount);
+}
+
+newKittenPackage();
+
+function newKittenPackage(firstKittenVaccine, firstKittenWormer) {
+    firstKittenVaccine = 60;
+    firstKittenWormer = 18;
+    let kittenDiscount = firstKittenVaccine + firstKittenWormer;
+    if (kittenDiscount <= 100) {
+        console.log("You need to purchase more items!")
+        return;
+    }
+    else {
+        console.log(kittenDiscount - 20);
+    }
+}
+
+newKittenPackage();
+
+const wormingTablet = 10;
+const fleaTreatment = 20;
+const kittenFood = 50;
+
+function newKittenThings () {
+    let shoppingCart = wormingTablet + fleaTreatment + kittenFood;
+    console.log(shoppingCart - 10);
+}
+
+newKittenThings ();
+
+function parasiteTreatment () {
+    let updatedCart = wormingTablet + fleaTreatment;
+    console.log("Well done, here's your discount!")
+}
+
+parasiteTreatment ();
+
+let time = 8;
+
+function welcomeMessage() {
+    if (time <=17) {
+       return console.log("Hello and welcome, we are open!");
+    } else {
+        console.log("Sorry, we're closed!");
+    }
+}
+
+function newWelcome () {
+welcomeMessage ();
+console.log("Well done");
+}
+
+newWelcome();
+
+
+function rockPaperScissors () {
+    if (pickWeapon1 === "rock" && pickWeapon2 === "scissors") {
+       return console.log("Rock wins!");
+    }
+    if (pickWeapon1 === "rock" && pickWeapon2 === "paper") {
+        return console.log("Paper wins!"); 
+    }
+    if (pickWeapon1 === "scissors" && pickWeapon2 === "paper") {
+        return console.log("Scissors wins!");
+    }
+    if (pickWeapon2 === "rock" && pickWeapon1 === "scissors") {
+        return console.log("Rock wins!");
+    }
+    if (pickWeapon2 === "rock" && pickWeapon1 === "paper") {
+        return console.log("Paper wins!");
+    }
+    if (pickWeapon2 === "scissors" && pickWeapon1 === "paper") {
+        return console.log("Scissors wins!");
+    }
+    else {
+       return console.log("You need to pick a weapon!")
+    }
+    }
+
+let pickWeapon1 = "scissors";
+let pickWeapon2 = "paper";
+
+rockPaperScissors ();
+
+
+// let newMessage = function () {
+//     alert("Hello there again!")
+// }
+
+// newMessage ();
+
+// function add(a, b) {
+//     return a + b;
+// }
+
+// add (5+6)
+
 

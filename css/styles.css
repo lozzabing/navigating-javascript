@@ -5,7 +5,7 @@ body, p {
 }
 
 h1, h3 {
-    color: #25255F;
+    color: black;
     padding: 1em 0;
     margin: 0;
     font-family: Times, serif;
@@ -19,12 +19,12 @@ p, a {
 }
 
 header {
-    height: 6rem;
+    height: 12em;
     background-color: #fff;
 }
 
 footer {
-    background-color: #25255F;
+    background-color: black;
     color: #fff;
 }
 
@@ -33,12 +33,12 @@ footer p {
 }
 
 .site-logo {
-    width: 6em;
+    width: 14em;
     margin: 1em 0;
 }
 
 .wrapper {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -57,7 +57,7 @@ footer p {
 .main p {
     font-size: 1em;
     line-height: 1.5;
-    color: #25255F;
+    color: black;
 }
 
 #main-content h1 {
@@ -65,23 +65,31 @@ footer p {
     text-align: center;
 }
 
-.hand {
-    width: 4em;
+.wrycat {
+    width: 8em;
     position: absolute;
-    top: -2rem;
-    right: 4rem;
-    transform: scalex(-1);
+    top: -6rem;
+    right: -2rem;
+    transform: rotate(8deg);
+}
+
+.smilingcat {
+    width: 8em;
+    position: absolute;
+    top: 14rem;
+    left: 2rem;
+    transform: rotate(-8deg);
 }
 
 .highlighted {
-    background-color: #ef4b4b;
+    background-color: hotpink;
     color: white;
-    padding-right: 0.1em;
-    padding-left: 0.1em;
-    border: 2px solid #f8ced2;
+    padding: 0.2em;
+    border: 4px solid #f8ced2;
+    border-radius: 10%;
     display: -webkit-inline-box;
     margin: 0em;
-    transform: rotate(-3deg);
+    transform: rotate(-4deg);
     margin-top: 0.5rem;
     display: inline-block;
 }
@@ -94,7 +102,7 @@ footer p {
 .btn {
     padding: 1rem 2rem;
     display: block;
-    background-color: pink;
+    background-color: skyblue;
     border-radius: 3px;
     margin: 0 0.5rem 1rem;
     cursor:pointer;
