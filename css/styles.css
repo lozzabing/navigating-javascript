@@ -134,39 +134,26 @@ footer p {
     font-size: 2rem;
 }
 
-.weather-widget {
-    background-color: #fff;
-    padding: 1rem;
-    margin-top: 1rem;
+
+.btnstyle {
+    padding: 1rem 2rem;
+    display: block;
+    background-color: lightpink;
+    border-radius: 3px;
+    border-color: rgb(255, 0, 111);
+    border-style: solid;
+    margin: 0 0.5rem 1rem;
+    cursor:pointer;
 }
 
-canvas {
-    margin: 1rem auto;
+.btnstylepop {
+    background-color:rgb(255, 0, 111);
+    border-color: lightpink;
+    border-style: solid;
+    font-size: 2rem;
 }
 
-.quote {
-    text-align: center;
-    padding: 1rem 4rem;
-}
 
-.course-card {
-    border: 2px dashed #EE589F;
-    margin-top: 1.5rem;
-    border-radius: 10px;
-    padding: 1rem;
-}
-
-.course-card h3,
-.course-card p{
-    text-align: center;
-    color: #EE589F;
-}
-
-.course-card p{
-    padding-top: 0;
-}
-
-.hideAndShow,
-.next-courses {
-    display: none;
+.catstylepop {
+    width: 15rem;
 }
