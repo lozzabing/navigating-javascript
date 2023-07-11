@@ -120,6 +120,7 @@
 //     console.log("Well done, here's your discount!")
 // }
 
+
 // parasiteTreatment ();
 
 // let time = 8;
@@ -251,6 +252,7 @@ rockPaperScissors ();
 
 // document.getElementById("wrycat").style.backgroundColor = "lightBlue";
 
+// DOM Manipulation Practice
 
 // const clickIt = document.getElementById("clickit")
 
@@ -258,9 +260,12 @@ rockPaperScissors ();
 //     alert("Yo!");
 //     clickIt.style.color = "Blue";
 //     clickIt.innerHTML = "Gotcha";
+//     console.log(computerSkills.name);
 // }
 
 // clickIt.addEventListener("mouseover",alertAlertAlert);
+
+
 
 let button = document.querySelector(".btnstyle");
 
@@ -292,8 +297,57 @@ function jumpTitle() {
     largeTitle.classList.toggle("btnstylepop");
 }
 
-largeTitle.addEventListener("click",jumpTitle);
+largeTitle.addEventListener("mouseover",jumpTitle);
 
 
+// let logo = document.querySelector(".site-logo");
 
+// function jumpLogo() {
+//     logo.classList.toggle("logopop");
+// }
 
+// logo.addEventListener("click",jumpLogo);
+
+// Objects Practice
+
+// let adminSkills = {
+//     name: "Copywriting",
+//     level: 7,
+//     jobs: 12,
+//     jobStatus: function() {
+//         console.log(`I can do ${this.name} at level ${this.level}.`);
+//     }
+// }
+
+// let computerSkills = {
+//     name: "Web Dev",
+//     level: 2,
+//     jobs: 5,
+//     jobStatus: function() {
+//     console.log(`I can do ${this.name} at level ${this.level}.`);
+//     }
+// }
+
+// let financialSkills = {
+//     name: "Xero",
+//     level: null,
+//     jobs: 2,
+//     jobStatus: function() {
+//     console.log(`I can do ${this.name} at level ${this.level}.`);
+//     }
+// }
+
+// adminSkills.jobStatus();
+
+// console.log(financialSkills.jobs);
+// console.log(computerSkills.lastName);
+// console.log(financialSkills.level);
+
+// JSON Practice
+
+// console.log(JSON.stringify(financialSkills));
+
+// const currentCourses = 
+// JSON.parse('{"First":"Intro to Web Dev", "Second":"Navigating Javascript"}');
+
+// console.log(currentCourses);

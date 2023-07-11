@@ -150,10 +150,13 @@ footer p {
     background-color:rgb(255, 0, 111);
     border-color: lightpink;
     border-style: solid;
-    font-size: 2rem;
+    font-size: 2.8rem;
 }
-
 
 .catstylepop {
     width: 15rem;
 }
+
+/* .logopop {
+    width: 30rem;
+} */
