@@ -351,3 +351,63 @@ largeTitle.addEventListener("mouseover",jumpTitle);
 // JSON.parse('{"First":"Intro to Web Dev", "Second":"Navigating Javascript"}');
 
 // console.log(currentCourses);
+
+const femaleNames = ["Lauren", "Savannah", "Pippi", "Cali"]
+
+console.log(femaleNames[1]);
+console.log(femaleNames.length);
+
+function welcome(names) {
+    console.log("Welcome " + names)
+}
+
+femaleNames.forEach(welcome);
+
+const applicants = ["applicants!", "Ginny", "Joe", "Matt"];
+
+console.log(applicants.length);
+
+// console.log(applicants[2]);
+
+// applicants.push("Lauren");
+// applicants.pop();
+// applicants.sort();
+
+let welcomeApplicants = "Hello ";
+let i = 3;
+// while loops through the array until the condition is no longer met 
+
+while (i < applicants.length) {
+    welcomeApplicants += applicants[i] + "<br>";
+    i++;
+}
+
+document.getElementById("paragraph-test").innerHTML= welcomeApplicants;
+
+// console.log(winners.find(findWinner));
+// console.log(winners.filter(findWinner));
+// console.log(winners[2]);
+
+const students = ["Savannah", "Freya", "Dominic"];
+
+function welcomeStudents(name) {
+    console.log("Welcome to the course, " + name + ", we are happy to have you here!");
+}
+
+students.forEach(welcomeStudents);
+
+console.log(typeof students);
+
+// let x is before the code is run, x < 8 is the condition, and x++ tell it to loop until it's no longer met
+for (let x = 4; x < 8; x++) {
+    console.log("Hello " + x);
+}
+
+//filter helps you find anything in the array that matches the parameters set. 
+const winners = [3, 1, 12, 7, 15, 22];
+
+function findWinner(winner) {
+    return winner >= 10
+}
+
+console.log(winners.filter(findWinner));
