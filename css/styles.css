@@ -157,6 +157,21 @@ footer p {
     width: 15rem;
 }
 
+#weather-widget {
+    background-color: #fff;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-style: dashed;
+    border-radius: 3px;
+    border-color: hotpink;
+
+}
+
+#temp-current {
+    color: hotpink;
+    font-size: 1.25rem;
+}
+
 /* .logopop {
     width: 30rem;
 } */

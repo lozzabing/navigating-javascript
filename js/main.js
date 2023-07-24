@@ -352,62 +352,90 @@ largeTitle.addEventListener("mouseover",jumpTitle);
 
 // console.log(currentCourses);
 
-const femaleNames = ["Lauren", "Savannah", "Pippi", "Cali"]
+// const femaleNames = ["Lauren", "Savannah", "Pippi", "Cali"]
 
-console.log(femaleNames[1]);
-console.log(femaleNames.length);
+// console.log(femaleNames[1]);
+// console.log(femaleNames.length);
 
-function welcome(names) {
-    console.log("Welcome " + names)
-}
+// function welcome(names) {
+//     console.log("Welcome " + names)
+// }
 
-femaleNames.forEach(welcome);
+// femaleNames.forEach(welcome);
 
-const applicants = ["applicants!", "Ginny", "Joe", "Matt"];
+// const applicants = ["applicants!", "Ginny", "Joe", "Matt"];
 
-console.log(applicants.length);
+// console.log(applicants.length);
 
 // console.log(applicants[2]);
 
 // applicants.push("Lauren");
+//splice puts data into an array so the one below will put "Other Name" between 0 and 1
+// applicants.splice(1, 0, "Other Name");
 // applicants.pop();
 // applicants.sort();
 
-let welcomeApplicants = "Hello ";
-let i = 3;
+// let welcomeApplicants = "Hello ";
+// let i = 0;
+
 // while loops through the array until the condition is no longer met 
+// while (i < applicants.length) {
+//     welcomeApplicants += applicants[i] + "<br>";
+//     i++;
+// }
 
-while (i < applicants.length) {
-    welcomeApplicants += applicants[i] + "<br>";
-    i++;
-}
-
-document.getElementById("paragraph-test").innerHTML= welcomeApplicants;
+// document.getElementById("paragraph-test").innerHTML= welcomeApplicants;
 
 // console.log(winners.find(findWinner));
 // console.log(winners.filter(findWinner));
 // console.log(winners[2]);
 
-const students = ["Savannah", "Freya", "Dominic"];
+// const students = ["Savannah", "Freya", "Dominic"];
 
-function welcomeStudents(name) {
-    console.log("Welcome to the course, " + name + ", we are happy to have you here!");
-}
+// function welcomeStudents(name) {
+//     console.log("Welcome to the course, " + name + ", we are happy to have you here!");
+// }
 
-students.forEach(welcomeStudents);
+// students.forEach(welcomeStudents);
 
-console.log(typeof students);
+// console.log(typeof students);
 
 // let x is before the code is run, x < 8 is the condition, and x++ tell it to loop until it's no longer met
-for (let x = 4; x < 8; x++) {
-    console.log("Hello " + x);
-}
+// for (let x = 4; x < 8; x++) {
+//     console.log("Hello " + x);
+// }
 
 //filter helps you find anything in the array that matches the parameters set. 
-const winners = [3, 1, 12, 7, 15, 22];
+// const winners = [3, 1, 12, 7, 15, 22];
 
-function findWinner(winner) {
-    return winner >= 10
+// function findWinner(winner) {
+//     return winner >= 10
+// }
+
+// console.log(winners.filter(findWinner));
+
+
+const apiKey = '53e166bcb9d9963760f9fa4d59909c0d';
+let lat =  '-34.425072';
+let lon = '150.893143';
+
+const weatherApiCall = 'https://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon+'&appid='+apiKey+'&units=metric';
+
+function fetchWeather() {
+    fetch(weatherApiCall)
+    .then((response) => response.json())
+    .then((data) => document.getElementById("temp-current").innerHTML = data.main.temp);
+}
+// .then((data) => console.log(data.main.temp));
+
+fetchWeather();
+
+const catFactsAptCall = 'https://cat-fact.herokuapp.com';
+
+function fetchCatFacts() {
+    fetch(catFactsAptCall)
+    .then((response) => response.json())
+    .then((data) => console.log(data.facts));
 }
 
-console.log(winners.filter(findWinner));
+fetchCatFacts();
